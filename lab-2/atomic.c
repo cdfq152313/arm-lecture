@@ -23,7 +23,8 @@ void *doSomeThing(void *arg)
 	counter += 1;
 	printf("\n Job %d started\n", counter);
 
-	for (i = 0; i < (0xFFFFFFFF); i++);
+    unsigned int test = 0xFFFFFFFF;
+	for (i = 0; i < test; i++);
 
 	printf("\n Job %d finished\n", counter);
 
